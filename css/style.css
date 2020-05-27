@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 html, body {
   height: 100%;
 }
@@ -7,6 +8,7 @@ html, body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 .flex-box-50 {
@@ -14,12 +16,137 @@ html, body {
       flex-basis: 50%;
 }
 
+.main-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.main-section-container .text-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: inherit;
+}
+
 .page-container {
   height: 100vh;
+  padding: 20px 80px;
+}
+
+.flex-c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 0 2.5%;
+  text-align: right;
+}
+
+.nav-list li a {
+  color: white;
+}
+
+.logo {
+  width: 100px;
+}
+
+.main-header {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.main-header-2 {
+  font-size: 25px;
+}
+
+.helper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sub-text {
+  font-size: 15px;
+  color: #adacac;
+  margin-top: 5px;
 }
 
 .main-backround {
   background: url("/assets/backgrounds/main-background.svg") no-repeat;
   background-size: cover;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.social-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-contact div {
+  margin: 0px 10px;
+}
+
+.cta {
+  padding: 1em 2em;
+  font-size: 18px;
+  border-radius: 40px;
+  background: -webkit-gradient(linear, left top, right top, from(#2655EE), to(#34B3FF));
+  background: linear-gradient(90deg, #2655EE, #34B3FF);
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

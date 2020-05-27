@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+$main-header-size:40px;
+$sub-text-font-size: 15px;
 html,body {
     height: 100%;
 }
@@ -5,14 +9,91 @@ html,body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 .flex-box-50 {
     flex-basis:50%;
 }
+
+.main-section-container {
+    display: flex;
+    flex-grow: 1;
+    .text-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: inherit;
+        .text {
+        }
+    }
+}
 .page-container{
     height: 100vh;
+    padding: 20px 80px;
+}
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+.nav-list {
+    text-align: right;
+    li {
+        display: inline-block;
+        padding: 0 2.5%;
+        text-align: right;
+        a {
+            color: white;
+        }
+    }
+}
+.logo {
+    width: 100px;
+}
+.main-header {
+    font-size: $main-header-size;
+    font-weight: 700;
+    // margin-bottom: 5px;
+}
+.main-header-2 {
+    font-size: $main-header-size - 15px;
+}
+.helper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    flex-direction: column;
+}
+.sub-text {
+    font-size: $sub-text-font-size;
+    color: rgb(173, 172, 172);
+    margin-top: 5px;
 }
 .main-backround {
     background: url('/assets/backgrounds/main-background.svg') no-repeat;
     background-size: cover;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+        flex-basis: 40%;
+    }
+
+}
+.social-contact {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    div {
+        margin: 0px 10px;
+        // text-align: center;
+    } 
+}
+.cta {
+    padding: 1em 2em;
+    font-size: 18px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#2655EE,#34B3FF);
+    color: white;
 }
