@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -175,12 +176,6 @@ html, body {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .content-block, .active-block {
-    border-radius: 20px !important;
-  }
-}
-
 @media only screen and (max-width: 1023px) {
   .footer {
     padding: 0px 0px;
@@ -269,6 +264,10 @@ html, body {
           justify-content: space-evenly;
 }
 
+.hide-desktop {
+  display: none;
+}
+
 .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -302,6 +301,56 @@ html, body {
   }
   .dir-rtl {
     direction: rtl;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-header {
+    font-size: 35px;
+    text-align: center;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
+  .main-backround {
+    background: url("/assets/backgrounds/mobile-background.svg");
+    background-position-x: 20%;
+    background-position-y: 65%;
+  }
+  .main-section-container .text-section {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: center;
+  }
+  .content-block, .active-block {
+    border-radius: 20px !important;
+  }
+  .nav-list li a {
+    color: white;
+  }
+  .contact-section {
+    -ms-flex-wrap: wrap-reverse !important;
+        flex-wrap: wrap-reverse !important;
+  }
+  .form-container {
+    -ms-flex-preferred-size: 85% !important;
+        flex-basis: 85% !important;
+    padding: 0px !important;
+    margin: auto;
+  }
+  .contact-section > div {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .header nav {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .center-mobile {
+    text-align: center;
+  }
+  .hide-desktop {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

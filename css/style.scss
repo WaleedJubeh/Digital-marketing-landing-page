@@ -5,6 +5,7 @@ $sub-text-font-size: 15px;
 $primary-gradient:linear-gradient(90deg,#2655EE,#34B3FF);
 html,body {
     height: 100%;
+    scroll-behavior: smooth;
 }
 * {
     padding: 0;
@@ -113,13 +114,7 @@ html,body {
 .centered-text {
     text-align: center;
 }
-@media only screen and (max-width:768px)
-{
-    .content-block,.active-block  {
-        border-radius: 20px !important;
-    }
-    
-}
+
 @media only screen and (max-width:1023px) {
     .footer {
         padding: 0px 0px;
@@ -189,6 +184,9 @@ html,body {
         
     }
 }
+.hide-desktop {
+    display: none;
+}
 .form-group {
     display: flex;
     flex-direction: column;
@@ -209,11 +207,60 @@ html,body {
         background: #FBFBFB;
     }
 }
+
 @media only screen  and (min-width :1500px) {
     .contact-section > div {
         flex-basis:41% !important;
     }
     .dir-rtl {
         direction: rtl;
+    }
+}
+@media only screen and (max-width:768px)
+{
+    .main-header {
+        font-size: $main-header-size - 5px;
+        text-align: center;
+    }
+
+    .hide-mobile {
+        display: none !important;
+    }
+    .main-backround {
+        background: url("/assets/backgrounds/mobile-background.svg");
+        background-position-x: 20%;
+        background-position-y: 65%;
+    }
+    .main-section-container .text-section {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .content-block,.active-block  {
+        border-radius: 20px !important;
+    }
+    .nav-list {
+        li a {
+            color: white;
+        }
+    }
+    .contact-section {
+        flex-wrap: wrap-reverse !important;
+    }
+    .form-container {
+        flex-basis: 85% !important;
+        padding: 0px !important;
+        margin: auto;
+    }
+    .contact-section > div {
+        flex-basis: 100% ;
+    }
+    .header nav {
+        flex-basis: 80%;
+    }
+    .center-mobile {
+        text-align: center;
+    }
+    .hide-desktop {
+        display: block;
     }
 }
