@@ -75,6 +75,12 @@ html,body {
 .rounded-input {
     border-radius: 40px;
 }
+.center-text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -99,4 +105,21 @@ html,body {
     border-radius: 40px;
     background: linear-gradient(90deg,#2655EE,#34B3FF);
     color: white;
+}
+.footer {
+    padding: 0px 80px;
+}
+.centered-text {
+    text-align: center;
+}
+@media only screen and (max-width:1023px) {
+    .footer {
+        padding: 0px 0px;
+    }
+    .page-container {
+        padding: 20px 10px;
+    }
+    .long-paragraph {
+        padding: 0px 10px;
+    }
 }

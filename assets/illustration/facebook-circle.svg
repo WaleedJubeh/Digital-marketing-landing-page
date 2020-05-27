@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="61" viewBox="0 0 61 61">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.542" y1="0.12" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#34b3ff"/>
+      <stop offset="1" stop-color="#2354f3"/>
+    </linearGradient>
+    <filter id="Ellipse_32" x="0" y="0" width="61" height="61" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#2354f3" flood-opacity="0.369"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_349" data-name="Group 349" transform="translate(-239.5 -7791.5)">
+    <g transform="matrix(1, 0, 0, 1, 239.5, 7791.5)" filter="url(#Ellipse_32)">
+      <circle id="Ellipse_32-2" data-name="Ellipse 32" cx="20" cy="20" r="20" transform="translate(10.5 7.5)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="facebook-letter-logo" transform="translate(267 7813)">
+      <path id="Facebook" d="M116.007,2.519v1.79H114.7V6.5h1.311V13H118.7V6.5h1.808s.169-1.049.251-2.2h-2.049V2.8a.636.636,0,0,1,.584-.525h1.468V0h-2C115.941,0,116.007,2.192,116.007,2.519Z" transform="translate(-114.696 -0.001)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

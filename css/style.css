@@ -112,6 +112,19 @@ html, body {
   border-radius: 40px;
 }
 
+.center-text {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,5 +165,25 @@ html, body {
   background: -webkit-gradient(linear, left top, right top, from(#2655EE), to(#34B3FF));
   background: linear-gradient(90deg, #2655EE, #34B3FF);
   color: white;
+}
+
+.footer {
+  padding: 0px 80px;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1023px) {
+  .footer {
+    padding: 0px 0px;
+  }
+  .page-container {
+    padding: 20px 10px;
+  }
+  .long-paragraph {
+    padding: 0px 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
