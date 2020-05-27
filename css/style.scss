@@ -72,6 +72,9 @@ html,body {
     background: url('/assets/backgrounds/main-background.svg') no-repeat;
     background-size: cover;
 }
+.rounded-input {
+    border-radius: 40px;
+}
 .header {
     display: flex;
     justify-content: space-between;

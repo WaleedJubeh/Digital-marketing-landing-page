@@ -108,6 +108,10 @@ html, body {
   background-size: cover;
 }
 
+.rounded-input {
+  border-radius: 40px;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
