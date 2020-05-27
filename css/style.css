@@ -175,6 +175,12 @@ html, body {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .content-block, .active-block {
+    border-radius: 20px !important;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
   .footer {
     padding: 0px 0px;
@@ -185,5 +191,22 @@ html, body {
   .long-paragraph {
     padding: 0px 10px;
   }
+}
+
+.active-block {
+  background: -webkit-gradient(linear, left top, right top, from(#2655EE), to(#34B3FF));
+  background: linear-gradient(90deg, #2655EE, #34B3FF);
+  color: white;
+  border-radius: 10px 20px 10px 60px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.content-block {
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.16);
+  border-radius: 10px 20px 10px 60px;
 }
 /*# sourceMappingURL=style.css.map */
