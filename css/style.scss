@@ -61,9 +61,12 @@ html,body {
 }
 .helper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-grow: 1;
     flex-direction: column;
+    > div {
+        padding: 30px 0px;
+    }
 }
 .sub-text {
     font-size: $sub-text-font-size;
@@ -76,6 +79,9 @@ html,body {
 }
 .rounded-input {
     border-radius: 40px;
+}
+.main-padding {
+    padding: 20px 80px;
 }
 .center-text {
     text-align: center;
